@@ -11,6 +11,24 @@ object Versions {
 
     const val hilt = "2.45"
 
+    const val retrofit = "2.9.0"
+    const val gsonConverter = "2.9.0"
+    const val okHttp = "4.9.0"
+    const val scalarConverter = "2.1.0"
+
+    const val kotlinCoroutines = "1.6.1"
+
+    const val coroutineLifecycleScope = "2.5.1"
+
+    const val glide = "4.12.0"
+
+    const val viewModelDelegate = "1.6.0"
+
+    const val roomDb = "2.4.3"
+
+    const val swipeRefresh = "1.1.0"
+
+
 }
 
 object Dep {
@@ -37,3 +55,12 @@ object DaggerHilt{
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
 }
+
+object Retrofit{
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
+    const val okHttp = "com.squareup.okHttp3:okHttp:${Versions.okHttp}"
+
+}
+
+
