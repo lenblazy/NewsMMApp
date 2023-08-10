@@ -9,6 +9,8 @@ object Versions {
     const val androidTestImplJunit = "1.1.5"
     const val androidTestImplEspresso = "3.5.1"
 
+    const val hilt = "2.45"
+
 }
 
 object Dep {
@@ -29,4 +31,9 @@ object AndroidTestImplDep {
     const val androidTestImplEspresso =
         "androidx.test.espresso:espresso-core:${Versions.androidTestImplEspresso}"
 
+}
+
+object DaggerHilt{
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
 }
