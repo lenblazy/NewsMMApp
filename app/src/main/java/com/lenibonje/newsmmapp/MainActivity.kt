@@ -2,6 +2,7 @@ package com.lenibonje.newsmmapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.lenibonje.common_util.Activities
 import com.lenibonje.common_util.Navigator
 import com.lenibonje.newsmmapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        provider.getActivities(Activities.NewsActivity).navigate(this)
     }
 
 }
