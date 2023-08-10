@@ -1,4 +1,4 @@
-package com.lenibonje.domain
+package com.lenibonje.news_presentation
 
 import org.junit.Test
 

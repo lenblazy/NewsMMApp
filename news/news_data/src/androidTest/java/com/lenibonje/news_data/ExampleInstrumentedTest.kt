@@ -1,4 +1,4 @@
-package com.lenibonje.new_data
+package com.lenibonje.news_data
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.lenibonje.new_data
+package com.lenibonje.news_data
 
 import org.junit.Test
 
