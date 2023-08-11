@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lenibonje.common_util.Navigator
 import com.lenibonje.domain.R
+import com.lenibonje.domain.databinding.ActivityNewsBinding
 
 class NewsActivity : AppCompatActivity() {
 
@@ -16,9 +17,11 @@ class NewsActivity : AppCompatActivity() {
         }
     }
 
+    private val binding: ActivityNewsBinding by lazy { ActivityNewsBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_news)
+        setContentView(binding.root)
     }
 }
 
