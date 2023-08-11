@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -36,6 +39,7 @@ android {
 dependencies {
 
     implementation project(":common:common_utils")
+    implementation project(":news:news_domain")
 
     implementation Dep.core
     implementation Dep.appcompat
@@ -46,5 +50,10 @@ dependencies {
 
     androidTestImplementation AndroidTestImplDep.androidTestImplJunit
     androidTestImplementation AndroidTestImplDep.androidTestImplJunit
+
+    implementation DaggerHilt.hilt
+    kapt DaggerHilt.hiltCompiler
+
+
 
 }

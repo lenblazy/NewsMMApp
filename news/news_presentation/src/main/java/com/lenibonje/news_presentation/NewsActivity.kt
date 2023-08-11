@@ -7,7 +7,9 @@ import android.os.Bundle
 import com.lenibonje.common_util.Navigator
 import com.lenibonje.domain.R
 import com.lenibonje.domain.databinding.ActivityNewsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class NewsActivity : AppCompatActivity() {
 
     companion object{
