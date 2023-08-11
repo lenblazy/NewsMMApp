@@ -2,6 +2,7 @@ package com.lenibonje.news_data.di
 
 import com.lenibonje.news_data.network.NewsApiService
 import com.lenibonje.news_data.repository.NewsRepositoryImpl
+import com.lenibonje.news_data.room.NewsDAO
 import com.lenibonje.news_domain.repository.NewsRepository
 import dagger.Module
 import dagger.Provides
@@ -19,8 +20,8 @@ object NewsDataModule {
     }
 
     @Provides
-    fun providesNewsRepository(newsApiService: NewsApiService): NewsRepository {
-        return NewsRepositoryImpl(newsApiService)
+    fun providesNewsRepository(newsApiService: NewsApiService, newsDao: NewsDAO): NewsRepository {
+        return NewsRepositoryImpl(newsApiService, newsDao)
     }
 
 }

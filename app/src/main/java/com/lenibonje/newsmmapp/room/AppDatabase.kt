@@ -5,8 +5,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.lenibonje.news_data.room.NewsDAO
+import com.lenibonje.news_domain.model.Article
 
-@Database(entities =[], version = 1, exportSchema = false, )
+@Database(entities =[Article::class], version = 1, exportSchema = false, )
 abstract class AppDatabase : RoomDatabase() {
 
     companion object {
