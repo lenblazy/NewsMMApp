@@ -54,6 +54,16 @@ dependencies {
     implementation DaggerHilt.hilt
     kapt DaggerHilt.hiltCompiler
 
+    implementation Coroutines.coroutineCore
+    implementation Coroutines.coroutineAndroid
+    implementation CoroutinesLifecycleScope.lifecycleRuntime
+    implementation CoroutinesLifecycleScope.lifecycleViewModel
 
+    implementation(Glide.glide)
+    kapt(Glide.annotationProcessor)
+
+    implementation(ViewModelDelegate.viewModelDelegate)
+
+    implementation(CircularProgressBar.swipeRefresh)
 
 }

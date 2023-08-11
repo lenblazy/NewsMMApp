@@ -1,6 +1,7 @@
 package com.lenibonje.common_util.network
 
 import com.lenibonje.common_util.Constants
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -9,6 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
+@Module
 object CommonModule {
 
     @Provides

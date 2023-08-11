@@ -13,7 +13,7 @@ object Versions {
 
     const val retrofit = "2.9.0"
     const val gsonConverter = "2.9.0"
-    const val okHttp = "4.9.0"
+    const val okHttp = "3.8.0"
     const val scalarConverter = "2.1.0"
 
     const val kotlinCoroutines = "1.6.1"
@@ -60,7 +60,7 @@ object Retrofit{
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
     const val scalarConverter = "com.squareup.retrofit2:converter-scalars:${Versions.scalarConverter}"
-    const val okHttp = "com.squareup.okHttp3:okHttp:${Versions.okHttp}"
+    const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
 
 }
 

@@ -14,6 +14,8 @@ class GetNewsArticleUseCase(private val newsRepository: NewsRepository) {
         try {
             emit(Resource.Success(newsRepository.getNewsArticle()))
         } catch (e: Exception) {
+
+            e.printStackTrace()
             emit(Resource.Error(message = e.message.toString()))
         }
 
