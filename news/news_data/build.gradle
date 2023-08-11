@@ -55,4 +55,7 @@ dependencies {
     implementation Retrofit.gsonConverter
     implementation Retrofit.okHttp
 
+    implementation Room.room
+    kapt Room.roomCompiler
+
 }

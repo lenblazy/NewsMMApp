@@ -49,4 +49,7 @@ dependencies {
     implementation DaggerHilt.hilt
     kapt DaggerHilt.hiltCompiler
 
+    implementation Room.room
+    kapt Room.roomCompiler
+
 }
